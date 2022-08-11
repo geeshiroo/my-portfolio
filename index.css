@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+body {
+	background-color: #F2EBE9;
+	font-family: "Quicksand", sans-serif;
+}
+
+
+h1 {
+	font-family: "Quicksand", sans-serif;
+	font-size: 6vh;
+	font-weight: bolder;
+	
+
+}
+
+p {
+	font-family: "Quicksand", sans-serif;
+	letter-spacing: 4px;
+}
+
+
+
+/* Navigation bar */
+.navbar-logo {
+	width: 85px;
+	height: 65px;
+	box-shadow: inset 0 0 0 0 yellow;
+	transition: ease-out 0.5s;
+	outline: none;
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #0F3D3E;
+}
+
+
+
+
+
+
+/* Section 1 (About Me) */
+#web-developer {
+	font-family: "Quicksand", sans-serif;
+	color: #F8B400;
+	font-weight: bolder;
+	font-size: 6vh;
+
+}
+
+/* Paragraph below header */
+#about p {
+	font-size: 19px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+/* For avatar image */
+.avatar {
+	margin-top: 4rem;
+	width: 100vw;
+	height: 25vh;
+}
+
+
+/* hello button */
+.hello {
+	width: 200px;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	border: none;
+	background-color: rgba(148, 180, 159, 0.5);
+	box-shadow: inset 0 0 0 0 yellow;
+	transition: ease-out 0.5s;
+	outline: none;
+}
+
+.hello:hover {
+	box-shadow: inset 200px 0 0 0 #59CE8F;
+	cursor: pointer;
+	color: white;
+}
+
+
+.section-one {
+	margin-top: 12rem;
+}	
+/* End of Section 1 */
+
+
+
+/*
+.desktop {
+	height: 65vh;
+
+}*/
+
+
+
+
+/* Section 2 */
+.section-two {
+	margin-bottom: 18rem;
+}
+
+#journey p {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
+
+
+/* Section 3 */
+.div-gallery {
+	padding-top: 5em;
+}
+
+
+.gallery {
+	max-height: 70vh;
+}
+
+
+#hobby {
+	background-color: #94B49F;
+	height: 100vh;
+}
+
+#hobby p {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: white;
+
+}
+
+
+
+
+
+
+/* google map */
+.map {
+	height: 300px;
+	min-width: 100%;
+}
+
+
+#web-developer {
+	animation-name: all;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes all {
+	 0%  {color: #F15412;}
+	 25%  {color: #EF5B0C;}
+	 50%  {color: #576F72;}
+	 100% {color: #F15412;}
+}
+
+
+/* Section 4 (Contact) */
+.modal-button {
+	color: black;
+	background-color: #DCD7C9;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+footer {
+	background-color: #3F4E4F;
+	color: white;
+}
+
+.fa-instagram {
+	color: #c246be;
+}
+
+.fa-spotify {
+	color: #098729;
+}
+
+.fa-twitter {
+	color: #219bff;
+}
+
+.fa-linkedin-square {
+	color: #51a4e8;
+}
+
+.fa-html5 {
+	color: #f25d2c;
+}
+
+.fa-css3 {
+	color: #1346ed;
+}
+
+
+.fa-git-square {
+	color: #f25d2c;
+}
+
+.fa-github {
+	color: #030100;
+}
+
+
+.fa-gitlab {
+	color: #f25d2c;
+}
+
+
