@@ -6,47 +6,40 @@
 	<meta name="viewport" content="width device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Insert Bootstrap CSS link below -->
+	<!-- Bootstrap Version 4 / First use when making capstone 1 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-
-	<!-- CDNJS -->
+	<!-- Bootstrap Version 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		
+	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script>
-	var i = 0;
-	var txt = 'I am Geward!';
-	var speed = 50;
-
-	function typeWriter() {
-	  if (i < txt.length) {
-	    document.getElementById("gee.shiroo").innerHTML += txt.charAt(i);
-	    i++;
-	    setTimeout(typeWriter, speed);
-	  }
-	}
-	</script>
-
-
+	<script src="https://kit.fontawesome.com/7c9de9dcea.js" crossorigin="anonymous"></script>
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="./images/avatar.svg">
 
 	<title>Geward John Tuico</title>
 </head>
+
 <body id="home">
 	
 	<!-- Navigation Bar -->
 	<nav class="sticky-top">
 		<ul class="navigation">
-			<span>
-				<a href="#home"><img src="./images/home.svg" class="navbar-logo sticky-top mt-3 ml-3 col-12"></a>
+			<span class = "p-2">
+				<a href="#home"><img src="./images/home.svg" class="navbar-logo sticky-top col-12"></a>
 			</span>
 
-			<div class="navigation mt-3 mr-3 ml-auto">
-				<span><a href="#about"><img src="./images/about.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
-				<span><a href="#journey"><img src="./images/journey.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
+			<div class="navigation p-2 ml-auto">
+				<!-- another navbar logo -->
+				<span><a href="#journey"><img src="./images/about.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
 				<span><a href="#hobby"><img src="./images/hobby.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
+				<span><a href="#projects"><img src="./images/journey.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
 				<span><a href="#connect"><img src="./images/connect.svg" class="rounded-circle navbar-logo float-right d-inline col-12"></a></span>
 			</div>
 		</ul>
@@ -54,10 +47,10 @@
 	
 
 	<!-- Section 1 (About Myself)-->
-	<section class="container-fluid section-one mt-0 mt-md-5 mb-0" id="about">
+	<section class="container-fluid section-one" id="about">
 		<div>
 			<div class="text-uppercase text-center col-12 order-md-12">
-			<h1>I am a full stack <span id="web-developer" class="typing">Web Developer</span></h1>
+			<h1>I am a <span id = "web-developer">full stack</span> Web Developer</h1>
 			<p>Dedicated and efficient full stack web developer who enjoys creating dynamic web pages.</p>
 			</div>	
 		</div>
@@ -80,8 +73,8 @@
 
 
 	<!-- Section-2 (Coding Journey) -->
-	<section class="container-fluid mt-0 mt-md-5 pt-5 section-two" id="journey">
-		<div class="row flex-row m-2 align-items-center pt-5 mb-5">
+	<section class="container-fluid section-two" id="journey">
+		<div class="row flex-row m-2 align-items-center pt-3 mb-5">
 			<div class="col-12 col-lg-6 order-2 order-md-2 order-lg-1 align-items-center">
 
 			<!-- My heading (should be on the right) -->
@@ -154,12 +147,126 @@
 	<!-- End of Section 3 -->
 
 
+	<!-- Card Section -->
+	<section class="col-12 container my-5">
+		<h1 class="text-center mb-5" id="projects">Projects</h1>
+
+		<div class="row row-cols-1 row-cols-lg-3">
+			<div class="col">
+				<div class="card">
+					<div class="inner">
+						<img src="./images/card1.svg" class="card-image card-img-top">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">STATIC WEB PORTFOLIO</h5>
+						<p class="card-text">A capstone project showcasing my skills in building responsive personal webpage using HTML , CSS, Bootstrap and a
+						snippet of Javascript.</p>
+					</div>
+					<div class="card-body">
+						<div class="card-text">
+							<h6>Tools Used:</h6>
+							<i class="fa-lg fa fa-html5"></i>
+							<i class="fa-lg fa fa-css3"></i>
+							<i class="fa-lg fa-brands fa-bootstrap"></i>
+							<i class="fa-lg fa-brands fa-square-js"></i>
+							<i class="fa-lg fa fa-github"></i>
+						</div>
+					</div>
+					<span class="text-center my-3">
+						<button class="rounded btn">
+							<a class="btn" type="button" target="_blank"
+								href="https://github.com/geeshiroo/my-portfolio">View Repository</a>
+						</button>
+					</span>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card">
+					<div class="inner">
+						<img src="./images/card2.svg" class="card-image card-img-top border" alt="...">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">BACK-END E-COMMERCE API</h5>
+						<p class="card-text">An e-commerce API for back-end server build using MongoDB, Express.js and Node.js hosted in Heroku. Each API request uses HTTP methods (GET, POST, PUT and DELETE) in Postman.</p>
+					</div>
+					<div class="card-body">
+						<div class="card-text">
+							<h6>Tools Used:</h6>
+							<i class="fa-lg fa-brands fa-square-js"></i>
+							<i class="fa-lg fa-solid fa-database"></i>
+							<span>
+								<img class="other-icons pb-2" src="./images/node-logo.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/express-icon.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/postman-icon.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/heroku-logo.svg">
+							</span>
+						</div>
+					</div>
+					<span class="text-center my-3">
+						<button class="rounded btn">
+							<a class="btn" type="button" target="_blank"
+								href="https://gitlab.com/batch203-tuico/second-capstone-project-tuico/second-capstone-project-tuico">View Repository</a>
+						</button>
+					</span>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card">
+					<div class="inner">
+						<img src="./images/card3.svg" class="card-img-top" alt="...">
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">KAIZOKU PH E-COMMERCE APP</h5>
+						<p class="card-text">An e-commerce web application made with React.js and styled using Bootstrap deployed in Vercel for the front-end. MongoDB, Express.js, Node.js and Rest API for the back-end hosted in Heroku. Adobe Photoshop was used to create a mock-up product.</p>
+					</div>
+					<div class="card-body">
+						<div class="card-text">
+							<h6>Tools Used:</h6>
+							<i class="fa-lg fa fa-html5"></i>
+							<i class="fa-lg fa fa-css3"></i>
+							<i class="fa-lg fa-brands fa-bootstrap"></i>
+							<i class="fa-lg fa-brands fa-square-js"></i>
+							<i class="fa-lg fa-solid fa-database"></i>
+							<span>
+								<img class="other-icons pb-2" src="./images/node-logo.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/heroku-logo.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/react-logo.svg">
+							</span>
+							<span>
+								<img class="other-icons pb-2" src="./images/vercel-logo.svg">
+							</span>
+						</div>
+					</div>
+					<span class="text-center my-3">
+						<button class="rounded btn">
+							<a class="btn" type="button" target="_blank" href="https://ecommerce-app-ufvf.vercel.app/">View Web Page</a>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+
 	<!-- Section 4 (Contact) -->
 	<section class="container-fluid mt-5" id="connect">
 		<div class="row d-flex justify-content-center">	
 
 			<!-- Google Map -->
-			<div class="col-sm-12 col-md-6 col-lg-8 p-5"> 
+			<div class="col-sm-12 col-md-6 col-lg-8 p-5 mt-5"> 
 				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15833.83975106813!2d125.41294523330981!3d7.188243106075541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f917a675fc24c5%3A0xec87eef7ca3c6c1d!2sCalinan%2C%20Davao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1660130973370!5m2!1sen!2sph" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 
@@ -192,7 +299,7 @@
 				  	  <div class="modal-dialog">
 				  	    <div class="modal-content">
 				  	      <div class="modal-header">
-				  	        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting!</h5>
+				  	        <h5 class="modal-title" id="exampleModalLabel">Oops!</h5>
 				  	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				  	          <span aria-hidden="true">&times;</span>
 				  	        </button>
@@ -224,7 +331,7 @@
 			<i class="fa fa-github"></i>
 			<i class="fa fa-gitlab"></i>
 			<i class="fab fa-node"></i>
-			<i class="fab fa-js"></i>
+			<i class="fa-brands fa-square-js"></i>
 		</div>
 		<h6>Profiles</h6>
 		<div class="col-sm-6 col-md-4 fa-lg">
@@ -234,13 +341,31 @@
 			<a href="https://twitter.com/daikiishiroo" target="_blank"><i class="fa fa-twitter-square"></i></a>
 		</div>
 	</footer>
-			
 
-<!-- Optional JavaScript; choose one of the two! -->
+
+
+
+
+	<script>
+		var i = 0;
+		var txt = "I am Geward. How are you?";
+		var speed = 50;
+	
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("gee.shiroo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+		</script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"></script>
 
 
 </body>

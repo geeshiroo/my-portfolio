@@ -2,33 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+/* CSS Reset */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
 }
-
 
 html {
 	scroll-behavior: smooth;
 }
 
 
-
 body {
 	background-color: #F2EBE9;
-	font-family: "Quicksand", sans-serif;
+	/* font-family: "Quicksand", sans-serif; */
 }
 
 
 h1 {
-	font-family: "Quicksand", sans-serif;
+	font-family: "Acme", sans-serif;
 	font-size: 6vh;
 	font-weight: bolder;
-	
-
 }
 
 p {
@@ -40,34 +38,31 @@ p {
 
 /* Navigation bar */
 .navbar-logo {
-	width: 85px;
-	height: 65px;
+	width: 100px;
+	height: 75px;
 	box-shadow: inset 0 0 0 0 yellow;
 	transition: ease-out 0.5s;
-	outline: none;
 }
-
 
 .navigation {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: end;
 	background-color: #0F3D3E;
 }
 
 
 
 
-
-
 /* Section 1 (About Me) */
 #web-developer {
-	font-family: "Quicksand", sans-serif;
-	color: #F8B400;
+	font-family: "Acme", sans-serif;
+	color: #F15412;
 	font-weight: bolder;
 	font-size: 6vh;
 
 }
+
 
 /* Paragraph below header */
 #about p {
@@ -96,33 +91,24 @@ p {
 	transition: ease-out 0.5s;
 	outline: none;
 }
-
 .hello:hover {
-	box-shadow: inset 200px 0 0 0 #59CE8F;
+	box-shadow: inset 200px 0 0 0 #1fcfae;
 	cursor: pointer;
 	color: white;
 }
 
 
 .section-one {
-	margin-top: 12rem;
+	margin-top: 5rem;
 }	
-/* End of Section 1 */
-
-
-
-/*
-.desktop {
-	height: 65vh;
-
-}*/
-
+/* End of Section 1 (About Me) */
 
 
 
 /* Section 2 */
 .section-two {
 	margin-bottom: 18rem;
+	padding-top: 10rem;
 }
 
 #journey p {
@@ -157,9 +143,57 @@ p {
 }
 
 
+/* Card Section */
+.col:hover {
+	transition: all 0.5s ease;
+	transform: scale(1.1);
+}
+
+.card-image {
+	filter: blur(0.6px);
+}
+
+.card {
+	min-height: 100%;
+}
+.card:hover {
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+	transition: 0.5s;
+}
+
+.inner {
+	overflow: hidden;
+}
+.inner img {
+	filter: grayscale(100%);
+	transition: all 1.5s ease;
+}
+.inner:hover img {
+	filter: grayscale(0%);
+	transform: scale(1.2);
+}
+
+.card-text {
+	letter-spacing: 1px;
+}
+
+.btn {
+	text-decoration: none;
+	border: none;
+	color: black;
+}
+.btn a:hover {
+	box-shadow: 1px 1px 1px 1px;
+	border-radius: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+}
 
 
 
+/* Section 4 (Contact) */
 
 /* google map */
 .map {
@@ -167,22 +201,6 @@ p {
 	min-width: 100%;
 }
 
-
-#web-developer {
-	animation-name: all;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes all {
-	 0%  {color: #F15412;}
-	 25%  {color: #EF5B0C;}
-	 50%  {color: #576F72;}
-	 100% {color: #F15412;}
-}
-
-
-/* Section 4 (Contact) */
 .modal-button {
 	color: black;
 	background-color: #DCD7C9;
@@ -191,16 +209,21 @@ p {
 
 
 
-
-
-
-
-
-
 /* Footer Section */
 footer, footer h4 {
-	
 	background-color: #3F4E4F;
+	color: white;
+}
+
+.other-icons {
+	width: 6%;
+}
+
+.fa-database {
+	color: #7fabda;
+}
+
+.fa-node.js {
 	color: white;
 }
 
@@ -228,6 +251,14 @@ footer, footer h4 {
 	color: #1346ed;
 }
 
+.fa-bootstrap {
+	color: #7c11f8
+}
+
+.fa-square-js {
+	color: #f7cf00
+}
+
 
 .fa-git-square {
 	color: #f25d2c;
@@ -236,7 +267,6 @@ footer, footer h4 {
 .fa-github {
 	color: #030100;
 }
-
 
 .fa-gitlab {
 	color: #f25d2c;
