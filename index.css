@@ -208,9 +208,15 @@ p {
 .modal-button {
 	color: black;
 	background-color: #DCD7C9;
-	padding: 5px;
+	padding: 7px;
+	border-radius: 20px;
+	opacity: 0.8;
 }
-
+.modal-button:hover{
+	box-shadow: 1px 1px black;
+	opacity: 1;
+	transition: 0.3s;
+}
 
 
 /* Footer Section */
@@ -251,6 +257,11 @@ footer p {
 
 .fa-linkedin-square {
 	color: #51a4e8;
+	opacity: 0.5;
+}
+.fa-linkedin-square:hover {
+	transition: 0.3s;
+	opacity: 1;
 }
 
 .fa-html5 {
@@ -268,7 +279,6 @@ footer p {
 .fa-square-js {
 	color: #f7cf00
 }
-
 
 .fa-git-square {
 	color: #f25d2c;
